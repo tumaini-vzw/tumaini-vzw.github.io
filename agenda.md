@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Agenda
-permalink: /agenda
+permalink: /agenda/
 order: 1
 ---
