@@ -18,12 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+domain: tumaini-vzw.github.io
 title: Tumaini Heart For Kids
 email: tumaini-vzw@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Tumaini Heart For Kids is een vzw die zich inzet om kansarme kinderen in Tanzania en Rwanda
   aan goed onderwijs te helpen.
-baseurl: "/tumaini-vzw.github.io" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 
 url: "https://tumaini-vzw.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb

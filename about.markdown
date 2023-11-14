@@ -13,6 +13,3 @@ Voorlopig bestaat ons bestuur uit de volgende fantastische mensen:
 * Penningmeester: Christine Devos
 * Webmaster: Nicolas Dewolf
 * Mede-oprichter: Morris Mugabe Kabale
-
-
-[jekyll-organization]: https://github.com/jekyll
