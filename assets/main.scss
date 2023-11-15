@@ -13,17 +13,27 @@
 }
 
 .page-link {
-    position: relative;
-    bottom: 0;
-    display: inline-block;
-    line-height: inherit !important;
     margin-right: 0 !important;
     padding-left: 10px;
     padding-right: 10px;
-    transition: bottom ease 0.5s;
 }
 
 .page-link:hover {
     color: green;
-    bottom: -10px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .page-link {
+        position: relative;
+        bottom: 0;
+        display: inline-block;
+        line-height: inherit !important;
+        transition: bottom ease 0.5s;
+    }
+
+    .page-link:hover {
+        bottom: -10px;
+    }
+
 }
