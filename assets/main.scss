@@ -3,11 +3,27 @@
 
 @import "minima";
 
-body {
+// body {
     // background-image: url("/assets/bg.webp");
-}
+// }
 
 .archive_img {
-    opacity: 0.5;
+    // opacity: 0.75;
     width: inherit;
+}
+
+.page-link {
+    position: relative;
+    bottom: 0;
+    display: inline-block;
+    line-height: inherit !important;
+    margin-right: 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: bottom ease 0.5s;
+}
+
+.page-link:hover {
+    color: green;
+    bottom: -10px;
 }

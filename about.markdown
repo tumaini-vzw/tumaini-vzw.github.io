@@ -6,17 +6,21 @@ order: 3
 ---
 
 <style>
-    #email {
+    .my_button {
         border: none;
-        color: white;
+        color: white !important;
         background-color: #27ae60;
         padding: 10px 25px;
         border-radius: 20px;
         cursor: pointer;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
     }
 
-    #email:hover {
-        color: black;
+    .my_button:hover {
+        color: black !important;
+        text-decoration: none
     }
 
     hr {
@@ -42,6 +46,15 @@ Voorlopig bestaat ons bestuur uit de volgende fantastische mensen:
 
 Indien u op de hoogte wilt gehouden worden over aanstaande events, laat dan hieronder uw e-mailadres achter:
 
-<form action = "https://docs.google.com/forms/d/e/1FAIpQLSeJqeTtlGpk4Qm1npkTm3vwmcGb4WAAiL9rEniCaRTKquPxmA/viewform" style = "text-align: center">
-    <input type = "submit" id = "email" value = "Naar invoerformulier">
+<form action = "https://docs.google.com/forms/d/e/1FAIpQLSeJqeTtlGpk4Qm1npkTm3vwmcGb4WAAiL9rEniCaRTKquPxmA/viewform" target = "_blank" style = "text-align: center">
+    <input type = "submit" class = "my_button" value = "Naar contactformulier">
 </form>
+
+## Privacyverklaring
+---
+
+Klik op onderstaande link om onze privacyverklaring te lezen:
+
+<div style = "text-align: center; margin-top: 5%">
+    <a href = "{{site.baseurl}}/privacy/" class = "my_button"> Naar verklaring </a>
+</div>
