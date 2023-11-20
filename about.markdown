@@ -50,6 +50,7 @@ Indien u op de hoogte wilt gehouden worden over aanstaande events, laat dan hier
     <input type = "submit" class = "my_button" value = "Naar contactformulier">
 </form>
 
+<br>
 ## Privacyverklaring
 ---
 

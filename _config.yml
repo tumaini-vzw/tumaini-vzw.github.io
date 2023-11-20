@@ -21,9 +21,11 @@
 domain: tumaini-vzw.github.io
 title: Tumaini Heart For Kids
 email: tumaini-vzw@hotmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until next tag
   Tumaini Heart For Kids is een vzw die zich inzet om kansarme kinderen in Tanzania en Rwanda
   aan goed onderwijs te helpen.
+description_: >-
+  Tumaini Heart For Kids is an NGO that helps children in Tanzania and Rwanda receive good education.
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "https://tumaini-vzw.github.io" # the base hostname & protocol for your site, e.g. http://example.com

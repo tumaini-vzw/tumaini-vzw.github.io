@@ -10,7 +10,16 @@ layout: base
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Berichten" }}</h2>
+
+    {% capture messages %}
+      {% if page.url contains "/en/" %}
+        Messages
+      {% else %}
+        Berichten
+      {% endif %}
+    {% endcapture %}
+
+    <h2 class="post-list-heading">{{ page.list_title | default: messages }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
