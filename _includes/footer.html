@@ -14,18 +14,21 @@
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
-            </li>
+              </li>
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              <li><span class="u-email">{{ site.email }}</span></li>
             {%- endif -%}
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
+        {{page.blabla}}
         {%- include social.html -%}
         {% if page.url contains "/en/" %}
           {% assign current_page = page.url | remove: "en/" %}
-          <a id = "lang_nl" href = "{{site.baseurl}}{{current_page}}">nl</a><a id = "lang_en" href = "{{site.baseurl}}{{current_page}}en">en</a>
+          <a id = "lang_nl" href = "{{site.baseurl}}{{current_page}}">nl</a><a id = "lang_en" href = "{{site.baseurl}}{{page.url}}">en</a>
+        {% elsif layout.post %}
+          <a id = "lang_nl" href = "{{site.baseurl}}{{page.url}}">nl</a><a id = "lang_en" href = "{{site.baseurl}}{{page.url}}">en</a>
         {% else %}
           <a id = "lang_nl" href = "{{site.baseurl}}{{page.url}}">nl</a><a id = "lang_en" href = "{{site.baseurl}}{{page.url}}en/">en</a>
         {% endif %}

@@ -24,18 +24,60 @@ layout: base
       {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        {% assign now = 'now' | date: "%s" %}
+        {% assign post_time = post.date | date: "%s" %}
+        {% assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 %}
+        {% if diff <= 30 %}
+          {% assign flag = true %}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+        {% endif %}
+      </li>
+      {%- endfor -%}
+      {% if flag != true %}
+        <br>
+        <br>
+      {% endif %}
+    </ul>
+
+    {% capture messages %}
+      {% if page.url contains "/en/" %}
+        Archive
+      {% else %}
+        Archief
+      {% endif %}
+    {% endcapture %}
+
+    <h2 class="post-list-heading">{{ page.list_title | default: messages }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
+        {% assign now = 'now' | date: "%s" %}
+        {% assign post_time = post.date | date: "%s" %}
+        {% assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 %}
+        {% if diff > 30 %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        {% endif %}
       </li>
       {%- endfor -%}
     </ul>
+
   {%- endif -%}
 
 </div>
