@@ -22,17 +22,12 @@ order: 3
         color: black !important;
         text-decoration: none
     }
-
-    hr {
-        margin-top: -15px;
-        margin-bottom: 20px;
-    }
 </style>
 
 ## Bestuur
 ---
 
-In de loop van 2022 hebben wij beslist om deze vzw op te richten. Het doel is om kansarme kinderen in Tanzania en Rwanda aan goed onderwijs te helpen.
+In de loop van 2022 hebben wij beslist om deze vzw op te richten in België (Horebeke). Het doel is om kansarme kinderen in Tanzania en Rwanda aan goed onderwijs te helpen.
 
 Voorlopig bestaat ons bestuur uit de volgende fantastische mensen:
 * Voorzitter: Martina Schwarz

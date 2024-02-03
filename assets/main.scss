@@ -3,6 +3,30 @@
 
 @import "minima";
 
+body {
+    background-color:  #d5f5e3 ;
+    // background-color:  #e9fef2 ;
+}
+
+.social-media-list {
+    margin: 0;
+}
+
+.rule {
+    color: gray;
+    border: 0;
+    border-top: 1px solid;
+    height: 1px;
+}
+
+.site-footer {
+    border: unset !important;
+}
+
+.site-header {
+    border-bottom: unset !important;
+}
+
 .archive_img {
     width: inherit;
 }
@@ -43,6 +67,10 @@
 
 #lang_nl {
     padding-right: 10px;
+}
+
+.post-link {
+    font-size: 20px;
 }
 
 // #lang_en {
