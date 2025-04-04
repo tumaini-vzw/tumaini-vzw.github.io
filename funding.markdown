@@ -23,7 +23,7 @@ Op dit moment werken wij enkel via vrijwillige giften. U kan zelf kiezen hoeveel
 <br>
 
 U kan giften storten op onderstaande bankrekening:
-<div style = "padding: 10pt 0; text-align: center; border-style: solid; border-width: 2pt; border-radius: 5pt; width: 40%; height: 20pt; margin-left: auto; margin-right: auto">
+<div style = "padding: 10pt 0; text-align: center; border-style: solid; border-width: 2pt; border-radius: 5pt; width: 60%; height: 20pt; margin-left: auto; margin-right: auto">
     BE37 0019 4534 7528
 </div>
 <br>

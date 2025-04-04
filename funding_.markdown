@@ -23,7 +23,7 @@ At the moment, we only work with voluntary gifts. You can freely choose how much
 <br>
 
 You can donate through the following bank account:
-<div style = "padding: 10pt 0; text-align: center; border-style: solid; border-width: 2pt; border-radius: 5pt; width: 40%; height: 20pt; margin-left: auto; margin-right: auto">
+<div style = "padding: 10pt 0; text-align: center; border-style: solid; border-width: 2pt; border-radius: 5pt; width: 60%; height: 20pt; margin-left: auto; margin-right: auto">
     BE37 0019 4534 7528
 </div>
 <br>
