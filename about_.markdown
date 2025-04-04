@@ -2,7 +2,7 @@
 layout: page
 title: About us
 permalink: /about/en/
-order: 3
+order: 4
 ---
 
 <style>
@@ -24,8 +24,9 @@ order: 3
     }
 </style>
 
-## Team
+### Team
 ---
+<br>
 
 We decided to start this NGO in 2022 in Belgium (Horebeke). The goal is to help children in need get a chance to attend school in Tanzania and Rwanda.
 
@@ -36,8 +37,13 @@ Our team currently consists of the following incredible people:
 * Webmaster: Nicolas Dewolf
 * Cofounder: Morris Mugabe Kabale
 
-## Contact
+* Volunteers: Alina Runschke & Christophe Van den Broecke
+
+<br>
+
+### Contact
 ---
+<br>
 
 In case you want to stay in touch with us and be notified of any upcoming events, you can leave us your contact information using the following link:
 
@@ -46,8 +52,10 @@ In case you want to stay in touch with us and be notified of any upcoming events
 </form>
 
 <br>
-## Privacy Statement
+
+### Privacy Statement
 ---
+<br>
 
 Click on the link below to read our privacy statement:
 

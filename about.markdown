@@ -2,7 +2,7 @@
 layout: page
 title: Over ons
 permalink: /about/
-order: 3
+order: 4
 ---
 
 <style>
@@ -24,8 +24,9 @@ order: 3
     }
 </style>
 
-## Bestuur
+### Bestuur
 ---
+<br>
 
 In de loop van 2022 hebben wij beslist om deze vzw op te richten in België (Horebeke). Het doel is om kansarme kinderen in Tanzania en Rwanda aan goed onderwijs te helpen.
 
@@ -34,10 +35,14 @@ Voorlopig bestaat ons bestuur uit de volgende fantastische mensen:
 * Secretaris: Yvanka Nijst
 * Penningmeester: Christine Devos
 * Webmaster: Nicolas Dewolf
-* Mede-oprichter: Morris Mugabe Kabale
+* Mede-oprichter: Morris Mugabe 
 
-## Contact
+* Vrijwilligers: Alina Runschke & Christophe Van den Broecke
+
+<br>
+### Contact
 ---
+<br>
 
 Indien u op de hoogte wilt gehouden worden over aanstaande events, laat dan hieronder uw e-mailadres achter:
 
@@ -46,8 +51,10 @@ Indien u op de hoogte wilt gehouden worden over aanstaande events, laat dan hier
 </form>
 
 <br>
-## Privacyverklaring
+
+### Privacyverklaring
 ---
+<br>
 
 Klik op onderstaande link om onze privacyverklaring te lezen:
 

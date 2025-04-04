@@ -5,12 +5,58 @@ permalink: /agenda/
 order: 1
 ---
 
-#### Geplande evenementen
+### Geplande evenementen
+---
+<br>
 
-Voorlopig hebben we nog geen nieuwe evenementen gepland.
+<div id = "planned" markdown = "1">
 
-<div style = "height: 10vh"></div>
+  <ul class="post-list">
+    {%- for post in site.categories.agenda -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
+        {%- assign now = 'now' | date: "%s" -%}
+        {%- assign post_time = post.date | date: "%s" -%}
+        {%- assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 -%}
+        {%- if diff <= 0 -%}
+          {%- assign flag = true -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+    {%- if flag != true -%}
+      <br>
+      <br>
+    {%- endif -%}
+  </ul>
+</div>
 
-#### Afgelopen evenementen
 
-* 21 januari 2024: Pannenkoekenfestijn @ Haaghoek 4 (Horebeke)
+### Afgelopen evenementen
+---
+<br>
+
+<ul class="post-list">
+  {%- for post in site.categories.agenda -%}
+    {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
+    {%- assign now = 'now' | date: "%s" -%}
+    {%- assign post_time = post.date | date: "%s" -%}
+    {%- assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 -%}
+    {%- if diff > 0 -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+      </li>
+    {%- endif -%}
+  {%- endfor -%}
+</ul>

@@ -9,25 +9,30 @@ layout: base
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  {%- if site.categories.agenda.size > 0 -%}
 
-    {% capture messages %}
+    {% capture title %}
       {% if page.url contains "/en/" %}
-        Messages
+        Planned events
+        {%- assign path = "/agenda/en/" -%}
       {% else %}
-        Berichten
+        Geplande evenementen
+        {%- assign path = "/agenda/" -%}
       {% endif %}
     {% endcapture %}
 
-    <h2 class="post-list-heading">{{ page.list_title | default: messages }}</h2>
+    <!--<h2 class="post-list-heading"><a href = "{{ path }}">{{ page.list_title | default: title }}</a></h2>-->
+    <h2 class="post-list-heading">{{ page.list_title | default: title }}</h2>
+    <hr><br>
+
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {% for post in site.categories.agenda %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
         {% assign now = 'now' | date: "%s" %}
         {% assign post_time = post.date | date: "%s" %}
         {% assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 %}
-        {% if diff <= 30 %}
+        {% if diff <= 0 %}
           {% assign flag = true %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             <h3>
@@ -47,6 +52,57 @@ layout: base
       {% endif %}
     </ul>
 
+  {%- endif -%}
+
+  {%- assign diff = site.posts.size | minus: site.categories.agenda.size -%}
+  {%- if diff > 0 -%}
+
+    {% capture messages %}
+      {% if page.url contains "/en/" %}
+        Messages
+      {% else %}
+        Berichten
+      {% endif %}
+    {% endcapture %}
+
+    <h2 class="post-list-heading current-messages">{{ page.list_title | default: messages }}</h2>
+    <hr class = "current-messages"><br>
+
+    <ul class="post-list current-messages">
+      {% assign flag = false %}
+      {%- for post in site.posts -%}
+        {%- unless post.categories contains "agenda" -%}
+          {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
+          {% assign now = 'now' | date: "%s" %}
+          {% assign post_time = post.date | date: "%s" %}
+          {% assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 %}
+          {% if diff <= 30 %}
+            {% assign flag = true %}
+              <li>
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                </h3>
+                {%- if site.show_excerpts -%}
+                  {{ post.excerpt }}
+                {%- endif -%}
+              </li>
+          {% endif %}
+        {%- endunless -%}
+      {%- endfor -%}
+      {% if flag != true %}
+        <script>
+          for(const element of document.getElementsByClassName("current-messages")) {
+            element.style.display = "none";
+          }
+        </script>
+        <br>
+        <br>
+      {% endif %}
+    </ul>
+
     {% capture messages %}
       {% if page.url contains "/en/" %}
         Archive
@@ -56,25 +112,27 @@ layout: base
     {% endcapture %}
 
     <h2 class="post-list-heading">{{ page.list_title | default: messages }}</h2>
+    <hr><br>
+
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <li>
         {%- assign date_format = site.minima.date_format | default: "%-d %b, %Y" -%}
         {% assign now = 'now' | date: "%s" %}
         {% assign post_time = post.date | date: "%s" %}
         {% assign diff = now | minus: post_time | divided_by: 3600 | divided_by: 24 %}
         {% if diff > 30 %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
+          <li>
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li>
         {% endif %}
-      </li>
       {%- endfor -%}
     </ul>
 
