@@ -4,12 +4,30 @@
 @import "minima";
 
 body {
-    background-color:  rgb(230, 250, 235) ;
+    // background-color:  rgb(230, 250, 235) ;
     // background-color:  #e9fef2 ;
+    background: radial-gradient(circle,rgba(230, 250, 235, 1) 0%, rgba(230, 250, 235, 1) 80%, rgba(255, 255, 255, 1) 100%);
+}
+
+#galleryContainer {
+    // overflow: visible;
+
+    #gallery {
+        columns: 2 300px;
+        column-gap: .5em;
+
+        img {
+            margin-bottom: .5em;
+        }
+    }
 }
 
 .social-media-list {
     margin: 0;
+}
+
+.wrapper {
+    max-width: 70%;
 }
 
 .rule {

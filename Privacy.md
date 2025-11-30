@@ -5,21 +5,15 @@ permalink: /privacy/
 exclude: yes
 ---
 
-<style>
-    hr {
-        margin-top: -15px;
-        margin-bottom: 20px;
-    }
-</style>
-
 ## De vereniging
 ---
+<br>
 
 "Tumaini Heart For Kids VZW" (verder afgekort als "Tumaini") is een vzw die zich inzet om kansarme kinderen in Tanzania en Rwanda aan goed onderwijs te helpen. Door gebruik te maken van bepaalde services worden "persoonsgegevens" of "privacygevoelige informatie" (verder afgekort als "gegevens") verwerkt zoals weergegeven in deze privacyverklaring (verder aangeduid als "verklaring").
 
 Deze gegevens worden rechtstreeks door u aan ons verstrekt. Tumaini hecht veel belang aan de privacy van haar partners en leden en besteedt de nodige aandacht aan de bescherming hiervan. Zo doen we ons uiterste best om u in deze verklaring in heldere en duidelijke taal uit te leggen welke gegevens wij verzamelen, waarvoor wij deze gebruiken en wat uw rechten in dit verband zijn. Tumaini houdt zich in alle gevallen aan de toepasselijke wet- en regelgeving, waaronder de "Algemene Verordening Gegevensbescherming". Indien u na het lezen van deze verklaring nog met vragen zit, aarzel dan zeker niet om ons te contacteren op:
 
-<div style = "padding-left: 10%; margin-bottom: 5%">
+<div style = "padding-left: 10%; margin-bottom: 5%; margin-top: 5%">
     Tumaini Heart For Kids VZW<br>
     Haaghoek 4<br>
     9667 Sint-Kornelis-Horebeke<br>
@@ -29,6 +23,7 @@ Deze gegevens worden rechtstreeks door u aan ons verstrekt. Tumaini hecht veel b
 
 ## Gegevensverwerking
 ---
+<br>
 
 Wij streven er continu naar om zo weinig mogelijk gegevens te verzamelen en enkel die gegevens te verzamelen die noodzakelijk zijn voor verdere communicatie. In het vervolg van deze verklaring wordt met "lidmaatschap" één van de volgende vormen van associatie aangeduid: 
 * ingeschreven op mailinglijst, 

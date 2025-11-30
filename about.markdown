@@ -46,7 +46,7 @@ Voorlopig bestaat ons bestuur uit de volgende fantastische mensen:
 
 Indien u op de hoogte wilt gehouden worden over aanstaande events, laat dan hieronder uw e-mailadres achter:
 
-<form action = "https://docs.google.com/forms/d/e/1FAIpQLSeJqeTtlGpk4Qm1npkTm3vwmcGb4WAAiL9rEniCaRTKquPxmA/viewform" target = "_blank" style = "text-align: center">
+<form action = "https://docs.google.com/forms/d/e/1FAIpQLSeJqeTtlGpk4Qm1npkTm3vwmcGb4WAAiL9rEniCaRTKquPxmA/viewform" target = "_blank" style = "text-align: center; margin-top: 5%">
     <input type = "submit" class = "my_button" value = "Naar contactformulier">
 </form>
 

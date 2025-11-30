@@ -28,7 +28,7 @@ order: 4
 ---
 <br>
 
-We decided to start this NGO in 2022 in Belgium (Horebeke). The goal is to help children in need get a chance to attend school in Tanzania and Rwanda.
+We decided to start this NGO in 2022 in Belgium (Horebeke). Our goal is to help children in need get a chance to attend school in Tanzania and Rwanda.
 
 Our team currently consists of the following incredible people:
 * Chair: Martina Schwarz
@@ -47,7 +47,7 @@ Our team currently consists of the following incredible people:
 
 In case you want to stay in touch with us and be notified of any upcoming events, you can leave us your contact information using the following link:
 
-<form action = "https://docs.google.com/forms/d/e/1FAIpQLScbe8BRI2kehvG2h-it-rGgkTVMi5zLp5Hrc3_jH81RIZ87-g/viewform" target = "_blank" style = "text-align: center">
+<form action = "https://docs.google.com/forms/d/e/1FAIpQLScbe8BRI2kehvG2h-it-rGgkTVMi5zLp5Hrc3_jH81RIZ87-g/viewform" target = "_blank" style = "text-align: center; margin-top: 5%">
     <input type = "submit" class = "my_button" value = "Contact Form">
 </form>
 

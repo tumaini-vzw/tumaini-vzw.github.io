@@ -11,6 +11,7 @@ order: 3
 <br>
 
 Op dit moment werken wij enkel via vrijwillige giften. U kan zelf kiezen hoeveel u zou willen doneren!
+<br><br><br><br><br>
 
 <!--
 ### Bundels
