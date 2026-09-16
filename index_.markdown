@@ -6,3 +6,7 @@ layout: home
 order: 0
 permalink: /en/
 ---
+
+<picture style = "position: absolute; z-index: -1;max-width: 70%">
+    <img style = "opacity: 10%" src = "/assets/Wallpaper.jpg">
+</picture>

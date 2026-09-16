@@ -8,5 +8,5 @@ order: 0
 
 
 <picture style = "position: absolute; z-index: -1;max-width: 70%">
-    <img style = "opacity: 20%" src = "assets/Wallpaper.jpg">
+    <img style = "opacity: 10%" src = "assets/Wallpaper.jpg">
 </picture>
